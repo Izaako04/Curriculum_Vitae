@@ -1,20 +1,25 @@
 * {
-
-    /* Familia de fuentes */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    /* Grosor de la fuente 200 */
+    background-color: rgb(23, 23, 23);
+    color :rgb(255, 255, 255);
     font-weight: 200; 
   }
 
-  h1 {
+  header{
+    text-align: center;
+  }
 
+  h1 {
     /* Alineación del texto */
     text-align: center;
-
     /* Grosor de la fuente negrita */ 
     font-weight: bold; 
   }
+
+  h2 {
+    font-weight: bold; 
+  }
+
 
   #photo1{
     width: 200px;
@@ -27,38 +32,37 @@
 
   section {
     margin: 4px 2px 8px 2px; 
- 
-    border: 0.2pt solid #cedddd; 
- 
+    border: 0.2pt solid #0a0a0a; 
     padding: 1.5% 0.8%;
- 
     padding-left: 1.2%; 
-    padding-right: 1.2%; 
+    padding-right: 1.2%;
   }
 
   section {
-
     -webkit-border-radius: 5px; 
     -moz-border-radius: 5px;    
     border-radius: 5px;
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
+    box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);;
   }
 
 nav ul {
-
     display: flex;									
     justify-content: space-around;
- 
 }
 
 section form {
-
   /* Modelo de diseño en cuadrícula */
   display: grid;									
   row-gap: 0.5rem;
+}
 
+.hover :hover {
+  background-color: rgb(77, 145, 146); 
+  padding: 0.2% 0.2%;
+  padding-left: 0.2%; 
+  padding-right: 0.2%; 
 }
 
 #resumen {
@@ -78,4 +82,81 @@ section form {
 }
 #resume img{
   max-width: 50%;
+}
+
+img{
+  background-color: rgb(108, 108, 108); 
+  padding: 0.2% 0.2%;
+  padding-left: 0.2%; 
+  padding-right: 0.2%; 
+}
+
+#habilidades {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
+  flex-wrap: wrap;
+}
+#habilidades ul{
+  width: 100%;
+  
+}
+#habilidades figure{
+  width: 50%;
+}
+
+#cartel {
+  display: grid;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  grid-template-areas: 'datos1 datos2';
+  grid-template-columns: 1fr 1fr;
+}
+#educacion{
+  grid-area: datos1;
+}
+#experiencia{
+  grid-area: datos2;
+}
+
+#Cartel2{
+  display: grid;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  grid-template-areas: 'datos3 datos4';
+  grid-template-columns: 1fr 1fr;
+}
+#Contacto{
+  grid-area: datos3;
+}
+#Oficina{
+  grid-area: datos4;
+}
+
+#Oficina figure{
+  align-items: center;
+}
+
+button{
+  color: white;
+  font-size: 16px;
+  cursor: pointer; /* Muestra una mano al pasar el ratón */
+}
+
+button :hover{
+  background-color: rgb(77, 145, 146); 
+  transform: scale(1.1);
+}
+
+input{
+  background-color: rgb(3, 93, 93); 
+}
+textarea{
+  background-color: rgb(3, 93, 93); 
+}
+
+figure iframe{
+  padding: 0.2% 0.8%;
+  padding-left: 28%;
 }

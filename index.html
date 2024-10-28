@@ -5,121 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Criollo - Currículum Vitae</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
 </head>
 <body>
     <header>
         <h1>Isaac Valentino Criollo Córdova</h1>
-        <p>Estudiante | <a href="mailto:isaac.criolllo04@gmail.com">isaac.criolllo04@gmail.com</a> | 0980783625</p>
+        <p class="hover">Estudiante | <a href="mailto:isaac.criolllo04@gmail.com">isaac.criolllo04@gmail.com</a> | 0980783625</p>
     </header>
     
     <nav>
         <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
+            <li class="hover"><a href="#resumen">Resumen</a></li>
+            <li class="hover"><a href="#experiencia">Experiencia</a></li>
+            <li class="hover"><a href="#educacion">Educación</a></li>
+            <li class="hover"><a href="#habilidades">Habilidades</a></li>
+            <li class="hover"><a href="#proyectos">Proyectos</a></li>
         </ul>
     </nav>
     
     <main>
-        <section id="resumen">
+        <section id="resumen" class="hover">
             <h2>Resumen</h2>
             <p>Responsible and proactive person with a passion for 
                 continuous learning. Noted for my work ethic, adaptability and collaborative approach, 
                 I seek to contribute with my commitment and skills to an organisation oriented towards 
                 growth and excellence.</p>
-            <img src="https://placehold.co/200" alt="placehold">
+            <img src="274633933_1345412652549578_4366241310185337763_n.jpg" alt="placehold" width="200px" height="200px">
         </section>
         
-        <section id="experiencia">
-            <h2>Experiencia</h2>
-            <p>
+        <div id="cartel">
+            <section id="experiencia">
+                <h2>Experiencia</h2>
+                <p>
+                    <ul>
+                        <li>Management assistant</li>
+                        <li>Customer Service</li>
+                        <li>Graphic Designer</li>
+                    </ul>
+                </p>
+            </section>
+            
+            <section id="educacion">
+                <h2>Educación</h2>
+                <p>
+                    <ol>
+                        <li>Estudiante de Computacion en: ESCUELA SUPERIOR POLITECNICA DEL LITORAL</li>
+                        <li>Bachillerato: LICEO NAVAL CMDT"     Rafael Andrade Lalama"</li>
+                    </ol>   
+                </p>
+            </section>
+        </div>
+        <section id="habilidades" class="skills">
+            <div>
+                <h2>Habilidades</h2>
                 <ul>
-                    <li>Management assistant</li>
-                    <li>Customer Service</li>
-                    <li>Graphic Designer</li>
+                    <li>Liderazgo</li>
+                    <li>Gestión de la tecnología</li>
+                    <li>Comunicación asertiva</li>
+                    <li>Inteligencia emocional</li>
+                    <li>Resolución de problemas</li>
+                    <li>Presentación de informes</li>
+                    <li>Trabajo en equipo</li>
                 </ul>
-            </p>
-        </section>
-        
-        <section id="educacion">
-            <h2>Educación</h2>
-            <p>
-                <ol>
-                    <li>Estudiante de Computacion en: ESCUELA SUPERIOR POLITECNICA DEL LITORAL</li>
-                    <li>Bachillerato: LICEO NAVAL CMDT"     Rafael Andrade Lalama"</li>
-                </ol>   
-            </p>
-        </section>
-        
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <p>Lista de tus habilidades relevantes.</p>
-            <iframe width="453" height="280" src="https://www.youtube.com/embed/CTazANzywSA" title="100 MOTIVOS por los que estudiar INFORMATICA | DotCSV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h2>Motivación</h2>
+                <figure alt="video">
+                    <iframe width="400" height="220" src="https://www.youtube.com/embed/CTazANzywSA" title="100 MOTIVOS por los que estudiar INFORMATICA | DotCSV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+            </div>
         </section>
         
         <section id="proyectos">
             <h2>Proyectos</h2>
-            <p>Descripción de proyectos en los que has trabajado.</p>
+            <ul>
+                <li>Proyecto de Programacion oriendata a objetos: Proyecto de venta de vehiculos utilizando java.</li>
+                <li>Proyecto de Base de Datos: Simulacion de base de datos utilizando MySql basado en la informacion que necesita una inmobiliaria.</li>
+                <li>Proyecto de Estructura de Datos: Proyecto de venta de vehiculos utilizando java y css.</li>
+            </ul>
+            
         </section>
-
-        <section id="Contacto">
-            <h2>Contacto</h2>
-            <form>
-                <div>
-                  <label for="nombre">Nombre Completo:</label>
-                  <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div>
-                  <label for="email">Correo Electronico:</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                  <label for="experiencia">Experencia Laboral:</label><br>
-                  <textarea id="educacion" name="educacion" rows="5" requiered></textarea><br>
-                </div>
-                <div>
-                  <label>Habilidades Tecnicas:</label>
-                </div>
-                <div>
-                  <input type="checkbox" name="habilidades" value="HTML"> HTML
-                  <input type="checkbox" name="habilidades" value="CSS"> CSS
-                  <input type="checkbox" name="habilidades" value="JavaScript"> JavaScript
-                </div>
-                <div>
-                  <label for="intereses">Intereses</label>
-                  <select id="intereses" name="intereses">
-                    <option value="desarrollo">Desarrollo Web</option>
-                    <option value="diseno">Diseno Grafico</option>
-                    <option value="marketing">Marketing</option>
-                  </select>
-                </div>
-                  <button type="submit">Enviar</button>
-            </form>
-        </section>
-
+        <div id="Cartel2">
+            <section id="Contacto">
+                <h2>Contacto</h2>
+                <form>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div>
+                    <label for="experiencia">Experencia Laboral:</label><br>
+                    <textarea id="educacion" name="educacion" rows="5" cols="76"requiered ></textarea>
+                    </div>
+                    <div>
+                    <label>Habilidades Tecnicas:</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="habilidades" value="HTML"> HTML
+                    <input type="checkbox" name="habilidades" value="CSS"> CSS
+                    <input type="checkbox" name="habilidades" value="JavaScript"> JavaScript
+                    </div>
+                    <div>
+                    <label for="intereses">Intereses</label>
+                    <select id="intereses" name="intereses">
+                        <option value="desarrollo">Desarrollo Web</option>
+                        <option value="diseno">Diseno Grafico</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                    </div>
+                    <button type="submit" id="button">Enviar</button>
+                </form>
+            </section>
+            <section id="Oficina">
+                <h2>Oficina:</h2>
+                <figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.3779791295305!2d-79.96795225519348!3d-2.1445564999999833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses-419!2sec!4v1730083667976!5m2!1ses-419!2sec" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+            </section>
+        </div>
     </main>
     
     <footer>
         <p>© Isaac Valentino Criollo Córdova - 2023</p>
         <ul>
-            <li><a href="https://www.linkedin.com/in/isaaccriollo">LinkedIn</a></li>
-            <li><a href="https://github.com/izaako_04">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/isaac-criollo-545b47278/">LinkedIn</a></li>
+            <li><a href="https://github.com/Izaako04">GitHub</a></li>
         </ul>
-        <h3>Oficina:</h3>
-        <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127581.52052477546!2d-80.13561805664062!3d-2.1830913999999786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73e68b8e9133%3A0xc3b7be1e655e7577!2sCentro%20Comercial%20Laguna%20Plaza!5e0!3m2!1ses!2sec!4v1728502166656!5m2!1ses!2sec" width="400" height="2x        50" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </figure>
-
-
     </footer>
 </body>
 </html>
