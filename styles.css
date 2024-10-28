@@ -8,6 +8,36 @@
   header{
     text-align: center;
   }
+  
+  /* Estilos del header y footer */
+  header, header h1, header p, header a{
+    background-color: #4d9192; /* Gris oscuro */
+
+    padding: 0.25%;
+    border-radius: 8px;
+  }
+
+  nav, nav ul, nav li, nav a{
+    background-color: #292d38; /* Gris oscuro */
+    color: white;
+    padding: 0.03%;
+    border-radius: 8px;
+  }
+  nav, nav li, nav a{
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px;    
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
+    box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
+  }
+  nav ul {
+    display: flex;									
+    justify-content: space-around;
+  }
+  nav ul :hover {
+    background-color: #4d9192;
+  }
 
   h1 {
     /* Alineación del texto */
@@ -20,7 +50,6 @@
     font-weight: bold; 
   }
 
-
   #photo1{
     width: 200px;
     height: auto;
@@ -30,39 +59,37 @@
     text-transform: uppercase;
   }
 
-  section {
-    margin: 4px 2px 8px 2px; 
-    border: 0.2pt solid #0a0a0a; 
+  section{
+    margin: 4px 2px 8px 2px;
+    background-color: #292d38;
+    border: 0.2pt solid #0a0a0a;
+    border-radius: 8px;
     padding: 1.5% 0.8%;
     padding-left: 1.2%; 
     padding-right: 1.2%;
   }
 
   section {
-    -webkit-border-radius: 5px; 
-    -moz-border-radius: 5px;    
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px;    
     border-radius: 5px;
     -webkit-box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
     -moz-box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
-    box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);;
+    box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
   }
 
-nav ul {
-    display: flex;									
-    justify-content: space-around;
-}
+  section h2, section p, section ol, section ul, section li, section div, section iframe, section figure, section label, section form{
+    background-color: #292d38;
+  }
+  ol :hover, section ul :hover, section li :hover{
+    background-color: #4d9192;
+    border-radius: 8px;
+  }
 
 section form {
   /* Modelo de diseño en cuadrícula */
   display: grid;									
   row-gap: 0.5rem;
-}
-
-.hover :hover {
-  background-color: rgb(77, 145, 146); 
-  padding: 0.2% 0.2%;
-  padding-left: 0.2%; 
-  padding-right: 0.2%; 
 }
 
 #resumen {
@@ -85,22 +112,23 @@ section form {
 }
 
 img{
-  background-color: rgb(108, 108, 108); 
+  background-color: #4d9192; 
   padding: 0.2% 0.2%;
   padding-left: 0.2%; 
-  padding-right: 0.2%; 
+  padding-right: 0.2%;
+  border-radius: 8px; 
 }
 
 #habilidades {
   display: flex;
+  font-size: larger;
   align-items: center;
   flex-direction: column;
-  height: 35vh;
+  height: 37vh;
   flex-wrap: wrap;
 }
 #habilidades ul{
   width: 100%;
-  
 }
 #habilidades figure{
   width: 50%;
@@ -110,14 +138,16 @@ img{
   display: grid;
   row-gap: 0.5rem;
   column-gap: 0.5rem;
-  grid-template-areas: 'datos1 datos2';
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'datos1 datos1 datos2';
+  grid-template-columns: 1fr 1fr 1fr;
 }
 #educacion{
   grid-area: datos1;
+  padding-left: 17%;
 }
 #experiencia{
   grid-area: datos2;
+  padding-left: 30%;
 }
 
 #Cartel2{
@@ -150,10 +180,10 @@ button :hover{
 }
 
 input{
-  background-color: rgb(3, 93, 93); 
+  background-color:rgb(77, 145, 146);  
 }
 textarea{
-  background-color: rgb(3, 93, 93); 
+  background-color: rgb(77, 145, 146); 
 }
 
 figure iframe{
