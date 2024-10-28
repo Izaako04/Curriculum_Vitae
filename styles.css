@@ -73,9 +73,9 @@
     -webkit-border-radius: 8px; 
     -moz-border-radius: 8px;    
     border-radius: 5px;
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
-    box-shadow: 3px 3px 1px 0px rgba(36, 35, 35, 0.6);
+    -webkit-box-shadow: 3px 3px 1px 0px #fffdfdda;
+    -moz-box-shadow: 3px 3px 1px 0px #fffdfdda;
+    box-shadow: 3px 3px 1px 0px #fffdfdda;
   }
 
   section h2, section p, section ol, section ul, section li, section div, section iframe, section figure, section label, section form{
