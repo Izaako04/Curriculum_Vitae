@@ -272,3 +272,98 @@ figure iframe{
 .transition {
   transition: 300ms ease;
 }
+
+/*Mobile friendly*/
+@media (max-width: 480px) {
+  body {
+      font-size: 0.61rem;
+  }
+
+  header, nav {
+    font-size: 0.9rem;
+  }
+
+  nav ul {
+      flex-direction: row;
+      list-style-type: none;
+      gap: 2%;
+      text-align: center;
+  }
+
+  #checkBoxs {
+      flex-direction: row;
+      gap: 5px;
+  }
+
+  img, #photo1 {
+      width: 40%;
+      height: auto;
+  }
+
+  #cartel{
+    row-gap: 0%;
+    grid-template-areas: 'datos1 datos2';
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #experiencia{
+    padding-left: 4vh;
+  }
+  #educacion{
+    padding-left: 4vh;
+  }
+
+  #educacion ol{
+    padding-left: 0; /* Elimina el indentado */
+    margin-left: 0
+  }
+
+  #habilidades{
+    height: auto;
+  }
+
+  #soft-skills{
+    padding-right: 26vh;
+  }
+  #videoMotivacion figure iframe{
+    width: 90%; /* Ajusta el tamaño según tus necesidades */
+    max-width: 1280px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  #Cartel2{
+    display: inline;
+    height: 28vh;
+  }
+  #Oficina figure iframe{
+    height: 175px;
+    width: 200px;
+    display: block;
+  }
+  #Contacto form input, label{
+    width: 100%; /* Ancho relativo al contenedor */
+    max-width: 440px; /* Ancho máximo */
+  }
+  #textoarea{
+    width: 85%;
+  }
+  #Contacto form textarea{
+    max-width: 100%;
+  }
+
+  #checkBoxs{
+    width: 85%;
+    gap: 10px;
+  }
+  .checkBox{
+    width: 30px;
+    height: 1vh;
+  }
+  #hobbies{
+    width: 85%;
+  }
+  #button{
+    width: 91%;
+  }
+}
