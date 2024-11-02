@@ -5,8 +5,13 @@
     font-weight: 200; 
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   header{
     text-align: center;
+    padding: 1%;
   }
   
   /* Estilos del header y footer */
@@ -34,15 +39,14 @@
   nav ul {
     display: flex;									
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   nav ul :hover {
     background-color: #4d9192;
   }
 
   h1 {
-    /* Alineación del texto */
     text-align: center;
-    /* Grosor de la fuente negrita */ 
     font-weight: bold; 
   }
 
@@ -51,7 +55,7 @@
   }
 
   #photo1{
-    width: 200px;
+    width: 20vw;
     height: auto;
   }
   .subtitle{
@@ -60,7 +64,7 @@
   }
 
   section{
-    margin: 4px 2px 8px 2px;
+    margin:  4px 2px 8px 2px;
     background-color: #292d38;
     border: 0.2pt solid #0a0a0a;
     border-radius: 8px;
@@ -97,7 +101,7 @@ section form {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 24vh;
+  height: 28vh;
   flex-wrap: wrap;
 }
 
@@ -106,6 +110,7 @@ section form {
 }
 #resumen p{
   width: 50%;
+  text-align: justify;
 }
 #resume img{
   max-width: 50%;
@@ -123,15 +128,44 @@ img{
   display: flex;
   font-size: larger;
   align-items: center;
-  flex-direction: column;
-  height: 37vh;
+  flex-direction: row;
+  height: 40vh;
   flex-wrap: wrap;
 }
+
 #habilidades ul{
   width: 100%;
 }
 #habilidades figure{
   width: 50%;
+}
+
+#habilidades {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.skill-description ul {
+  padding-right: 0.8rem;
+}
+
+.skill-icon {
+  display:inline;
+  align-items: row;
+  justify-content: center;
+  align-items: center;
+  height: 18.75rem;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+
+.icon {
+  fill: white;
+  width: 20%;
+  height: 70px;
+  margin: 1.34rem;
 }
 
 #cartel {
@@ -189,4 +223,52 @@ textarea{
 figure iframe{
   padding: 0.2% 0.8%;
   padding-left: 28%;
+}
+
+.clear {
+  clear: both;
+}
+
+#checkBoxs{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.checkBox {
+  display: block;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px #fff;
+}
+
+.checkBox div {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  top: -52px;
+  left: -52px;
+  position: absolute;
+  transform: rotateZ(45deg);
+  z-index: 100;
+}
+
+.checkBox input[type=checkbox]:checked + div {
+  left: -10px;
+  top: -10px;
+}
+
+.checkBox input[type=checkbox] {
+  position: absolute;
+  left: 50px;
+  visibility: hidden;
+}
+
+.transition {
+  transition: 300ms ease;
 }
